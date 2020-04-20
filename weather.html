@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Weather Icons -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css">
+
+        <style type='text/css'>
+            body{
+                background-image: url('sky.jpg');
+                min-height: 100vh;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                color: white;
+            }
+
+            .skyzone {
+                position: absolute;
+                min-height: 100vh;
+                min-width: 100vw;
+                top: 0;
+                bottom: 0;
+                background-color: rgba(31, 34, 118, 0.5);
+            }
+
+            
+         
+
+
+
+
+            
+        </style>
+
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--transparent overlay-->
+<div class="skyzone">
+    
+
+    
+<div class="input">
+    <input type="number" class="inputValue" placeholder="Enter Zip Code">
+    <input type="submit" value="submit" class="button">
+</div>
+
+<div class="display">
+    <h1 class="name"></h1>
+    <p id="displayMoment"></p>
+    <p class="desc"></p>
+    <p class="temp"></p>
+</div>
+
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src= 'https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js'></script>
+    <script src="./moment-timezone-with-data.js"></script>
+    <script src="index.js"></script>
+    
+    
+</body>
+</html>
